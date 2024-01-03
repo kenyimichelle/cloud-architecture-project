@@ -52,6 +52,24 @@
                             <fieldset>
                                 <div class="form-card">
                                     <h2 class="fs-title">Injury Specifications</h2>
+                                    <div class="row">
+                                    <label class="form-label">Refered/Transfered</label>
+                                        <select>
+                                        <option>YES</option>
+                                        <option>NO</option>
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <label class="form-label">Sign of life?</label>
+                                            <select>
+                                            <option>YES</option>
+                                            <option>NO</option>
+                                            </select>
+                                        </div>
+                                    <div class="row">
+                                        <Label for="date" class="form-label"> Arrival Date</Label>
+                                        <input type="date" class="form-label" placeholder="Arrival date">
+                                    </div>
                                     <label for="location" class="form-label">Where did the injury occur?</label>
                                     <select>
                                         <option>Farm</option>
@@ -101,6 +119,7 @@
                                     </div> -->
                                     <h2 class="fs-title">Injury type</h2>
                                         <select id="dropdownA">
+                                            <option value="">Select Injury Type</option>
                                             <option value="option1">Traffic injury</option>
                                             <option value="option2">Injury by firearm</option>
                                             <option value="option3">Stabbing lacerations</option>
@@ -113,116 +132,125 @@
                                             
                                         </select>
                                     
-                                        <div class="row">
+                                        <div class="sub-dropdown" id="dropdown1" style="display: none;">
 
-                                            <select class="sub-dropdown" id=" dropdown1">
-                                                <option> Yes</option>
-                                                <option> No</option>
-                                                <option> Unspecified</option>
+                                            <select>
+                                                <option value="">Traffic injury</option>
+                                                <option value="YES"> Yes</option>
+                                                <option value="NO"> No</option>
+                                                <option value="Unspecified"> Unspecified</option>
                                             </select> 
                                         </div>
-                                        <div class="row">
+                                        <div class="sub-dropdown"  id="dropdown2" style="display: none;">
                                             
-                                            <select class="sub-dropdown" id=" dropdown2">
-                                                <option> Handgun</option>
-                                                <option> Rifle, shotgun or larger firearm</option>
-                                                <option> Unspecified firearm</option>
-                                                <option> Other</option>
+                                            <select>
+                                                <option value="">Type of firearm</option>
+                                                <option value="Handgun"> Handgun</option>
+                                                <option value="Rifle, shotgun or larger firearm"> Rifle, shotgun or larger firearm</option>
+                                                <option value="Unspecified firearm"> Unspecified firearm</option>
+                                                <option value="Other"> Other</option>
                                             </select>  
                                         </div>
                                     
                                     
                                         
-                                        <div class="row" >
+                                        <div class="sub-dropdown" id="dropdown3" style="display: none;">
                                             
-                                            <select  class="sub-dropdown" id=" dropdown3">
-                                                <option> Stabbed</option>
-                                                <option> Cuts/Laceration</option>
-                                                <option> Penetrating injury</option>
-                                                <option> Unspecified</option>
+                                            <select>
+                                                <option value="">Stab wound description</option>
+                                                <option value="Stabbed"> Stabbed</option>
+                                                <option value="Cuts/Laceration"> Cuts/Laceration</option>
+                                                <option value="Penetrating injury"> Penetrating injury</option>
+                                                <option value="Unspecified"> Unspecified</option>
                                             </select> 
                                         </div>
-                                        <div class="row">
+                                        <div class="sub-dropdown" id="dropdown4" style="display: none;">
                                             
-                                            <select class="sub-dropdown" id=" dropdown4">
-                                                <option> Hot air and gases</option>
-                                                <option> Elec high voltage</option>
-                                                <option> Elec low voltages</option>
-                                                <option> Elec not specified</option>
-                                                <option> Scalds</option>
-                                                <option> Exposure to smoke</option>
-                                                <option> Flame</option>
-                                                <option> Friction</option>
-                                                <option> Hot liquids</option>
-                                                <option> Unspecified</option>
-                                                <option> hot objects</option>
-                                                <option> Other</option>
-                                                <option> Chemical burn</option>
-                                                <option> Radiation</option>
+                                            <select>
+                                                <option value="">Burn type</option>
+                                                <option value="Hot air and gases"> Hot air and gases</option>
+                                                <option value="Elec high voltage"> Elec high voltage</option>
+                                                <option value="Elec low voltage"> Elec low voltages</option>
+                                                <option value="Elec not specified"> Elec not specified</option>
+                                                <option value="Scalds"> Scalds</option>
+                                                <option value="Exposure to smoke"> Exposure to smoke</option>
+                                                <option value="Flame"> Flame</option>
+                                                <option value="Friction"> Friction</option>
+                                                <option value="Hot liquids"> Hot liquids</option>
+                                                <option value="Unspecified"> Unspecified</option>
+                                                <option value="hot objects"> hot objects</option>
+                                                <option value="Other"> Other</option>
+                                                <option value="Chemicalburn"> Chemical burn</option>
+                                                <option value="Radiation"> Radiation</option>
                                             </select>   
                                         </div>
                                     
                                     
-                                        <div class="row">
+                                        <div class="sub-dropdown" id="dropdown5" style="display: none;">
                                             
-                                            <select class="sub-dropdown" id=" dropdown5">
-                                                <option> First Degree</option>
-                                                <option> Second Degree</option>
-                                                <option> Third Degree</option>
-                                                <option> Unspecified</option>
+                                            <select>
+                                                <option value="">Burn Degree</option>
+                                                <option value="First Degree"> First Degree</option>
+                                                <option value="Second Degree"> Second Degree</option>
+                                                <option value="Third Degree"> Third Degree</option>
+                                                <option value="Unspecified"> Unspecified</option>
                                             </select>   
                                         </div>
-                                        <div class="row">
+                                        <div class="sub-dropdown" id="dropdown6" style="display: none;">
                                             
-                                            <select class="sub-dropdown" id=" dropdown6">
-                                                <option> Drugs</option>
-                                                <option> Pesticides</option>
-                                                <option> Other chemical substances</option> 
-                                                <option> Snake bite/contact</option>
-                                                <option> Reptile bite/contact(other than snake)</option>
-                                                <option> Scorpion bite/contact</option>
-                                                <option> Spider bite</option>
-                                                <option> Unspecified</option>
-                                                <option> Other</option>
-                                                <option> Exposure to gas and vapor</option>
+                                            <select>
+                                                <option value="">Type of poison</option>
+                                                <option value="Drugs"> Drugs</option>
+                                                <option value="Pesticides"> Pesticides</option>
+                                                <option value="Other chemical substances"> Other chemical substances</option> 
+                                                <option value="Snake bite/contact"> Snake bite/contact</option>
+                                                <option value="Reptile bite/contact(other than snake)"> Reptile bite/contact(other than snake)</option>
+                                                <option value="Scorpion bite/contact"> Scorpion bite/contact</option>
+                                                <option value="Spider bite"> Spider bite</option>
+                                                <option value="Unspecified"> Unspecified</option>
+                                                <option value="Other"> Other</option>
+                                                <option value="Exposure to gas and vapor"> Exposure to gas and vapor</option>
                                             </select> 
                                         
                                         </div>
                                         
-                                            <div class="row">
+                                            <div class="sub-dropdown" id="dropdown7" style="display: none;">
                                                 
-                                                <select class="sub-dropdown" id=" dropdown7" >
-                                                    <option> suspected violence</option>
-                                                    <option> physical abuse</option>
-                                                    <option> Sexual abuse</option>
-                                                    <option> Psychological abuse</option>
+                                                <select>
+                                                    <option value="">Type of violence</option>
+                                                    <option value="suspected violence"> suspected violence</option>
+                                                    <option value="physical abuse"> physical abuse</option>
+                                                    <option value="Sexual abuse"> Sexual abuse</option>
+                                                    <option value="Psychological abuse"> Psychological abuse</option>
                                                 </select>  
                                             </div>
-                                            <div class="row">
+                                            <div class="sub-dropdown"  id="dropdown8" style="display: none;">
                                                   
-                                                <select class="sub-dropdown" id=" dropdown8" >
-                                                        <option> Yes</option>
-                                                        <option> No</option>
-                                                        <option> Unspecified</option>
+                                                <select>
+                                                    <option value="">Fall</option>
+                                                        <option value="Yes"> Yes</option>
+                                                        <option value="No"> No</option>
+                                                        <option value="Unspecified"> Unspecified</option>
                                                 </select>
                                             </div>
                                         
-                                        <div class="row">
+                                        <div class="sub-dropdown" id="dropdown9" style="display: none;">
                                             
-                                            <select class="sub-dropdown" id=" dropdown9" >
-                                                <option> Blunt force(struck/hit by object)</option>
-                                                <option> Drowning and submersion</option>
-                                                <option> Unspecified</option>
-                                                <option> Explosion</option>
-                                                <option> Intentional self harm or suicide attempt</option>
-                                                <option> Intentional: Assault/ homicide</option>
-                                                <option> Legal interventions and operations of war</option>
-                                                <option> Nature Forces</option>
-                                                <option> Other inanimate mechanical forces</option>
-                                                <option> Overexertion</option>
-                                                <option> Traumatic contact with machines</option>
-                                                <option> Unintentional</option>
-                                                <option> Contusion/struck/crushed/suffocation/lightning/airway obstruction</option>
+                                            <select>
+                                                <option value="">other injury Type</option>
+                                                <option value="Blunt force(struck/hit by object)"> Blunt force(struck/hit by object)</option>
+                                                <option value="Drowning and submersion"> Drowning and submersion</option>
+                                                <option value="Unspecified"> Unspecified</option>
+                                                <option value="Explosion"> Explosion</option>
+                                                <option value="Intentional self harm or suicide attempt"> Intentional self harm or suicide attempt</option>
+                                                <option value="Intentional: Assault/ homicide"> Intentional: Assault/ homicide</option>
+                                                <option value="Legal interventions and operations of war"> Legal interventions and operations of war</option>
+                                                <option value="Nature Forces"> Nature Forces</option>
+                                                <option value="Other inanimate mechanical forces"> Other inanimate mechanical forces</option>
+                                                <option value="Overexertion"> Overexertion</option>
+                                                <option value="Traumatic contact with machines"> Traumatic contact with machines</option>
+                                                <option value="Unintentional"> Unintentional</option>
+                                                <option value="Contusion/struck/crushed/suffocation/lightning/airway obstruction"> Contusion/struck/crushed/suffocation/lightning/airway obstruction</option>
                                             </select>   
                                             
                                         </div>    
@@ -245,14 +273,16 @@
                                 <select>
                                     <option> Assisted RR</option>
                                     <option> Unassisted RR</option>
-                                </select> 
-                            </label>
+                                </select>
+                                <div class="row"></div>
+                            <label for="location" class="form-label">GCS qualifier</label>
                             <select>
                                 <option> Patient medically or chemically sedat</option>
                                 <option> Obstruction to the eye</option>
                                 <option> Intubated</option>
                                 <option> Valid GCS(none of the above)</option>
                             </select> 
+                                
 
                                 </div>
                                 <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>

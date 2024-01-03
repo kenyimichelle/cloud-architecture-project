@@ -120,6 +120,7 @@ $(document).ready(function() {
     $("#dropdownA").on("change", function() {
       var selectedOption = $(this).val();
       $(".sub-dropdown").hide();  // Hide all sub-dropdowns
+    
   
       if (selectedOption === "option1") {
         $("#dropdown1").show();  // Show dropdown1
@@ -148,5 +149,5 @@ $(document).ready(function() {
         $("#dropdown9").show();  // Show dropdown9
       }
     });
-  });
-})
+});
+}) 
